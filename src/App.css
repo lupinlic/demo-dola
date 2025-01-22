@@ -1,0 +1,169 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* header */
+.header {
+  height: 80px;
+  background: rgba(20, 59, 54, 0.63);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.header a:hover {
+  color: #d69c52;
+}
+
+#header {
+  height: 850px;
+  background: url('https://bizweb.dktcdn.net/100/469/097/themes/882205/assets/slider_1.jpg?1705898809027');
+  background-size: cover;
+  background-position: center;
+}
+
+.bt-booking {
+  display: inline;
+  height: 45px;
+  min-width: 100px;
+  border: none;
+  color: #fff;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  border-radius: 8px;
+  background-color: #d69c52;
+  font-size: 15px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.bt-booking:hover {
+  background-color: #bd8133;
+}
+
+i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.header i:hover {
+  color: #d69c52;
+}
+
+.img-aboutus {
+  transition: transform 0.5s ease;
+}
+
+.img-aboutus:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.category-block:hover {
+  cursor: pointer;
+}
+
+.category-block {
+  transition: transform 1s ease;
+
+}
+
+.category-block:hover .category-block_child {
+  border: 1px solid #d69c52;
+  border-radius: 5px;
+
+}
+
+.menu ul li {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 12px;
+  border: 1px solid #fff;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+  background-color: #bd8133;
+  border: none;
+}
+
+.menu_active {
+  background-color: #bd8133;
+  border: none;
+}
+
+.pro-item {
+  height: 320px;
+  background-color: #fff;
+  margin: 8px 16px;
+}
+
+.pro-item:hover {
+  cursor: pointer;
+}
+
+.hover-actions {
+  position: absolute;
+  display: flex;
+  bottom: 100px;
+  left: 30%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.pro-item:hover .hover-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
