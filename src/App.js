@@ -4,11 +4,13 @@ import { publicRoutes } from './routes';
 import User from './components/layout/User';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import ScrollToTop from './components/shared/ScrollToTop';
 function App() {
 
 
   return (
     <Router>
+      <ScrollToTop></ScrollToTop>
       <Routes>
         {
           publicRoutes.map((route, index) => {

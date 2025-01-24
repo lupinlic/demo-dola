@@ -11,6 +11,10 @@ const Menu = () => {
         "khaiVi": [
             { id: 1, name: "Gỏi Cuốn", price: "25,000đ", image: "https://bizweb.dktcdn.net/thumb/large/100/469/097/products/1cdb6151948324e7bb3b83f1b9f4cb.jpg?v=1667882448253" },
             { id: 2, name: "Súp Cua", price: "30,000đ", image: "https://bizweb.dktcdn.net/thumb/large/100/469/097/products/1cdb6151948324e7bb3b83f1b9f4cb.jpg?v=1667882448253" },
+            { id: 20, name: "Gỏi Cuốn", price: "25,000đ", image: "https://bizweb.dktcdn.net/thumb/large/100/469/097/products/1cdb6151948324e7bb3b83f1b9f4cb.jpg?v=1667882448253" },
+            { id: 21, name: "Súp Cua", price: "30,000đ", image: "https://bizweb.dktcdn.net/thumb/large/100/469/097/products/1cdb6151948324e7bb3b83f1b9f4cb.jpg?v=1667882448253" },
+            { id: 22, name: "Gỏi Cuốn", price: "25,000đ", image: "https://bizweb.dktcdn.net/thumb/large/100/469/097/products/1cdb6151948324e7bb3b83f1b9f4cb.jpg?v=1667882448253" },
+            { id: 23, name: "Súp Cua", price: "30,000đ", image: "https://bizweb.dktcdn.net/thumb/large/100/469/097/products/1cdb6151948324e7bb3b83f1b9f4cb.jpg?v=1667882448253" },
         ],
         "monChinh": [
             { id: 3, name: "Cơm Tấm", price: "50,000đ", image: "https://bizweb.dktcdn.net/thumb/large/100/469/097/products/1cdb6151948324e7bb3b83f1b9f4cb.jpg?v=1667882448253" },
@@ -64,7 +68,7 @@ const Menu = () => {
                         onClick={() => handleCategoryClick("combo")}>Combo</li>
                 </ul>
             </div>
-            <div className='mt-3'>
+            <div className='mt-3' style={{ marginLeft: '50px' }}>
                 <ProductFrame products={products[activeCategory]} />
             </div>
         </div>
