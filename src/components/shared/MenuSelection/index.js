@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const MenuSelection = ({ isVisible, onClose }) => {
+    const navigate = useNavigate();
+
     const [activeCategory, setActiveCategory] = useState('khaiVi');
     if (!isVisible) {
         return null;
@@ -8,6 +11,9 @@ const MenuSelection = ({ isVisible, onClose }) => {
 
     const handleCategoryClick = (category) => {
         setActiveCategory(category);
+    };
+    const handleToBill = () => {
+        navigate('/Bill');
     };
     const products = {
         "khaiVi": [
@@ -56,7 +62,7 @@ const MenuSelection = ({ isVisible, onClose }) => {
                     width: "100%",
                     height: "100%",
                     backgroundColor: "rgba(0, 0, 0, 0.5)",
-                    zIndex: 1,
+                    zIndex: 100,
                 }}
             // Đóng khi nhấn bên ngoài
             ></div>
@@ -135,7 +141,7 @@ const MenuSelection = ({ isVisible, onClose }) => {
 
 
                 <div className='menu-bt'>
-                    <button onClick={onClose}>
+                    <button onClick={handleToBill}>
                         Xác nhận
                     </button>
                     <button onClick={onClose}>

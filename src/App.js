@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { publicRoutes } from './routes';
 import User from './components/layout/User';
+import Admin from './components/layout/Admin';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import ScrollToTop from './components/shared/ScrollToTop';
